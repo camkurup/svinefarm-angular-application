@@ -1,4 +1,4 @@
 export interface DashLight{
-    LightLevelOutSide: number;
+    LightLevelOutside: number;
     LightLevelInStable: number;
 }

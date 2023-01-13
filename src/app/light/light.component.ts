@@ -9,7 +9,7 @@ import { Light } from '../light';
 export class LightComponent {
   light: Light = {
     id: 1,
-    LightLevelOutSide: 1,
+    LightLevelOutside: 1,
     TimeOfLog: new Date(),
     LightLevelInStable: 1
   }

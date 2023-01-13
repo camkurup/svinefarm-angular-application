@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'svinefarm-angular-application';
+  title = 'Svinefarm Angular Application';
 }

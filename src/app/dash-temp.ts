@@ -1,4 +1,4 @@
-export interface Temperature{
+export interface DashTemperature{
     Temperature: number;
     UVLightOn: Boolean;
 }

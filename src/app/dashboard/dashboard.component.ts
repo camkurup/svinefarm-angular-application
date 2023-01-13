@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Dashboard } from '../dashboard';
+import { DashLight } from '../dash-light';
+import { DashTemperature } from '../dash-temp';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,8 +8,13 @@ import { Dashboard } from '../dashboard';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  dashboard : Dashboard = {
-    Temperature: 12,
-    LigthInStable: 'true'
-  };
+  dashLight: DashLight = {
+    LightLevelOutSide: 1,
+    LightLevelInStable: 1
+  }
+
+  daschTemp: DashTemperature = {
+    Temperature: 26,
+    UVLightOn: true
+  }
 }

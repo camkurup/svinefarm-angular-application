@@ -1,10 +1,20 @@
-<h2>Light now</h2>
+<h2>Dashboard</h2>
 <ul class="DashLigts"></ul>
 <li *ngFor="let dashlight of dashLights">
     <button type="button">
+        <p>LightLevel Outside</p>
         <span class="LightLevelOutside">{{dashlight.LightLevelOutside}}</span>
     </button><br>
     <button type="button">
+        <p>LightLevel In Stable</p>
         <span class="LightLevelInStable">{{dashlight.LightLevelInStable}}</span>
+    </button><br><br>
+    <button type="button">
+        <p>Temperature</p>
+        <span class="Temperature"></span>
+    </button><br>
+    <button type="button">
+        <p>UV-Light On</p>
+        <span class="UV-Light"></span>
     </button>
 </li>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Temperature } from '../temperature';
+import { Temperature } from '../Interfaces/temperature';
 
 @Component({
   selector: 'app-temperature',

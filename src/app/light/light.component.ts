@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Light } from '../light';
+import { Light } from '../Interfaces/light';
 
 @Component({
   selector: 'app-light',

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { DashLight } from '../dash-light';
-import { DashTemperature } from '../dash-temp';
-import { DASHLIGHTS } from '../mock-dash-light';
+import { DashLight } from '../Interfaces/dash-light';
+import { DashTemperature } from '../Interfaces/dash-temp';
+import { DASHLIGHTS } from '../Mocks/mock-dash-light';
 
 @Component({
   selector: 'app-dashboard',

@@ -9,12 +9,14 @@
         <p>LightLevel In Stable</p>
         <span class="LightLevelInStable">{{dashlight.LightLevelInStable}}</span>
     </button><br><br>
+</li>
+<li *ngFor="let dashtemperature of dashTemperatures">
     <button type="button">
         <p>Temperature</p>
-        <span class="Temperature"></span>
+        <span class="Temperature">{{dashtemperature.Temperature}}</span>
     </button><br>
     <button type="button">
         <p>UV-Light On</p>
-        <span class="UV-Light"></span>
+        <span class="UV-Light">{{dashtemperature.UVLightOn}}</span>
     </button>
 </li>

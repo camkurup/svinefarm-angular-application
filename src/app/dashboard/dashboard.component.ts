@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { DashLight } from '../Interfaces/dash-light';
-import { DashTemperature } from '../Interfaces/dash-temp';
 import { DASHLIGHTS } from '../Mocks/mock-dash-light';
+import { DASHTEMPERATURES } from '../Mocks/mock-dash-temperature';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,9 +9,5 @@ import { DASHLIGHTS } from '../Mocks/mock-dash-light';
 })
 export class DashboardComponent {
   dashLights = DASHLIGHTS;
-
-  daschTemp: DashTemperature = {
-    Temperature: 26,
-    UVLightOn: true
-  }
+  dashTemperatures = DASHTEMPERATURES;
 }

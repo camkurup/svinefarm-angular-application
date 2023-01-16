@@ -9,6 +9,9 @@ import { DashTemperatureComponent } from './dash-temperature/dash-temperature.co
 import { TemperatureComponent } from './temperature/temperature.component';
 import { LightComponent } from './light/light.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from "../environments/environment";
+import { initializeApp } from "firebase/app";
+initializeApp(environment.firebase);
 
 @NgModule({
   declarations: [

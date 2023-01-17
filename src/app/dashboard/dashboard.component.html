@@ -11,7 +11,7 @@
     </button><br><br>
 </li>
 <li *ngFor="let dashtemperature of dashTemperatures">
-    <button type="button">
+    <button type="button" routerLink="/temperature">
         <p>Temperature</p>
         <span class="Temperature">{{dashtemperature.Temperature}}</span>
     </button><br>

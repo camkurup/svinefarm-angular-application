@@ -1,11 +1,11 @@
 <h2>Dashboard</h2>
 <ul class="DashLigts"></ul>
 <li *ngFor="let dashlight of dashLights">
-    <button type="button">
+    <button type="button" routerLink="/light">
         <p>LightLevel Outside</p>
         <span class="LightLevelOutside">{{dashlight.LightLevelOutside}}</span>
     </button><br>
-    <button type="button">
+    <button type="button" routerLink="/light">
         <p>LightLevel In Stable</p>
         <span class="LightLevelInStable">{{dashlight.LightLevelInStable}}</span>
     </button><br><br>
@@ -15,7 +15,7 @@
         <p>Temperature</p>
         <span class="Temperature">{{dashtemperature.Temperature}}</span>
     </button><br>
-    <button type="button">
+    <button type="button" routerLink="/temperature">
         <p>UV-Light On</p>
         <span class="UV-Light">{{dashtemperature.UVLightOn}}</span>
     </button>

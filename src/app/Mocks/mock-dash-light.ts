@@ -1,5 +1,5 @@
 import { DashLight } from "../Interfaces/dash-light";
 
 export const DASHLIGHTS: DashLight[] = [
-    {LightLevelOutside: 1, LightLevelInStable: 1}
+    {LightLevelOutside: 10, LightLevelInStable: 10}
 ];

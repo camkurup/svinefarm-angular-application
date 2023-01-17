@@ -1,6 +1,6 @@
 export interface Light{
     id: number;
-    LightLevelOutside: number;
+    leveloflight: number;
     TimeOfLog: Date;
-    LightLevelInStable: number;
+    lightlevelinstable: number;
 }

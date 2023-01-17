@@ -1,4 +1,14 @@
 <p>Put in "LightLog" data</p>
+
+<li *ngFor="let lights of lightLogs">
+        <p>LightLevel</p>
+        <span class="Light">
+            id {{lights.id}} <br>
+            Lys udenfor {{lights.leveloflight}}<br>
+            lys i stald {{lights.lightlevelinstable}}
+        </span>
+</li>
+
 <button type="button" routerLink="/">
     <span class="back">Tilbage</span>
 </button><br>

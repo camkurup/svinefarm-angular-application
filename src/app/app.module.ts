@@ -11,6 +11,7 @@ import { LightComponent } from './light/light.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from "../environments/environment";
 import { initializeApp } from "firebase/app";
+import { HttpClientModule } from '@angular/common/http';
 initializeApp(environment.firebase);
 
 @NgModule({
@@ -25,6 +26,7 @@ initializeApp(environment.firebase);
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable

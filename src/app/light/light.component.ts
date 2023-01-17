@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Light } from '../Interfaces/light';
+import { LightService } from '../_services/light.service';
 
 @Component({
   selector: 'app-light',
@@ -7,10 +8,15 @@ import { Light } from '../Interfaces/light';
   styleUrls: ['./light.component.css']
 })
 export class LightComponent {
-  light: Light = {
-    id: 1,
-    LightLevelOutside: 1,
-    TimeOfLog: new Date(),
-    LightLevelInStable: 1
-  }
+
+  constructor(private lightService: LightService) { }
+  ngOnInit(): void {
+
+    this.lightService.GetAllLightLogs()
+    .subscribe((data) => {
+      console.log(data);
+    })}
+
+    lightLogs: Light[] = [];
+
 }

@@ -4,13 +4,12 @@
     <button type="button" routerLink="/light">
         <p>LightLevel</p>
         <span class="Light">
-            id: {{lights.id}} <br>
             Lys udenfor: {{lights.leveloflight}}<br>
             lys i stald: {{lights.lightlevelinstable}}
         </span>
-    </button><br>
-    
+    </button><br>   
 </li>
+
 <li *ngFor="let dashtemperature of dashTemperatures">
     <button type="button" routerLink="/temperature">
         <p>Temperature</p>

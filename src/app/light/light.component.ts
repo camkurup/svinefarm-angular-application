@@ -15,6 +15,7 @@ export class LightComponent {
     this.lightService.GetAllLightLogs()
     .subscribe((data) => {
       console.log(data);
+      this.lightLogs=data;
     })}
 
     lightLogs: Light[] = [];

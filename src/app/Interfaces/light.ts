@@ -4,3 +4,4 @@ export interface Light{
     TimeOfLog: Date;
     lightlevelinstable: number;
 }
+//its a model

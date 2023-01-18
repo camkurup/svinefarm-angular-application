@@ -12,6 +12,7 @@ export class LightComponent {
   constructor(private lightService: LightService) { }
   ngOnInit(): void {
 
+    //fuction to get all logs
     this.lightService.GetAllLightLogs()
     .subscribe((data) => {
       console.log(data);

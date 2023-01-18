@@ -7,6 +7,9 @@ import { Temperature } from '../Interfaces/temperature';
   styleUrls: ['./temperature.component.css']
 })
 export class TemperatureComponent {
+
+  //Static data
+  //change this to API data
   temperature: Temperature = {
     id: 1,
     Temperature: 26,

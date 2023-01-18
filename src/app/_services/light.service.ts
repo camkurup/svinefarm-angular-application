@@ -13,6 +13,8 @@ export class LightService {
     })
   }
   
+  //Connection string to the API that has the connection to the DB
+  //The string might differ on another local setup
   baseUrl:string = "https://localhost:7085/Light";
   constructor(private http:HttpClient) { }
 
